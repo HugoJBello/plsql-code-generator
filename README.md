@@ -11,13 +11,13 @@ Just download the file plsql-code-generator.jar and execute it using java (norma
 
 Execute the file plsql-code-generator.jar and copy the code:
 
-  TYPE type                IS RECORD (type_name1 T_type1, type_name1 t_type2, type_name1 t_type3, type_name1 t_type4);
+  ``TYPE type                IS RECORD (type_name1 T_type1, type_name1 t_type2, type_name1 t_type3, type_name1 t_type4);``
 
 (this declarates a very simple type)
 
 now click **Generate** and go to the tab *Generated dbms_output*
 
-  CREATE OR REPLACE TYPE object_name FORCE AS OBJECT
+  ``CREATE OR REPLACE TYPE object_name FORCE AS OBJECT
   (
       record1  VARCHAR2(15 BYTE),
       record2  NUMBER(5),
@@ -33,6 +33,6 @@ now click **Generate** and go to the tab *Generated dbms_output*
       record5  NUMBER,
       record6  NUMBER)  
   RETURN SELF AS RESULT
-  );
+  );``
 
 click 
