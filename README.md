@@ -60,4 +60,21 @@ clicking on *dbms_output from a type* and   **Generate** we will obtain the code
  dbms_output.put_line('record6 ' || result.record6 );
 ```
 
+### Table objects or records (with loops)
+
+If the object or type that we want to display is a PLSQL table, we can tick the box **with loop** and we will obtain results like this:
+```
+i := result.first();
+WHILE result.exists(i) LOOP
+ dbms_output.put_line('record1 ' || result(i).record1 );
+ dbms_output.put_line('record2 ' || result(i).record2 );
+ dbms_output.put_line('record3 ' || result(i).record3 );
+ dbms_output.put_line('record4 ' || result(i).record4 );
+ dbms_output.put_line('record5 ' || result(i).record5 );
+ dbms_output.put_line('record6 ' || result(i).record6 );
+ dbms_output.put_line('------| '||i||' |------');
+ dbms_output.put_line('');
+i := result.next(i);
+END LOOP;
+```
 
