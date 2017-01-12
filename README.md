@@ -15,7 +15,7 @@ Execute the file plsql-code-generator.jar and copy the code:
 
 (this declarates a very simple type) and paste it in the tab *Declaration*.
 
-![image](https://github.com/HugoJBello/plsql-code-generator/blob/master/captures/example_object1.png)
+![image](https://github.com/HugoJBello/plsql-code-generator/blob/master/captures/example_type1.png)
 
 Now click on the button *dbms_output from a type* and click **Generate**. If you go to the tab *Generated dbms_output* you will see that it has generated the code
 ```
@@ -24,6 +24,8 @@ Now click on the button *dbms_output from a type* and click **Generate**. If you
  dbms_output.put_line('type_name1 ' || result.type_name1 );
  dbms_output.put_line('type_name1 ' || result.type_name1 );
 ```
+![image](https://github.com/HugoJBello/plsql-code-generator/blob/master/captures/example_type2.png)
+
 
 We can repeat this operation with objects instead of types. In that case we can use a code as the following one:
 
@@ -46,6 +48,7 @@ We can repeat this operation with objects instead of types. In that case we can 
   RETURN SELF AS RESULT
   );
   ```
+![image](https://github.com/HugoJBello/plsql-code-generator/blob/master/captures/example_object1.png)
 
 clicking on *dbms_output from a type* and   **Generate** we will obtain the code:
 ```
