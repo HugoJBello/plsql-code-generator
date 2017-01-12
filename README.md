@@ -13,9 +13,11 @@ Execute the file plsql-code-generator.jar and copy the code:
 
   ``TYPE type                IS RECORD (type_name1 T_type1, type_name1 t_type2, type_name1 t_type3, type_name1 t_type4);``
 
-(this declarates a very simple type)
+(this declarates a very simple type) and paste it in the tab *Declaration*.
 
-now click on the button *dbms_output from a type* and click **Generate**. If you go to the tab *Generated dbms_output* you will see that it has generated the code
+![image](https://github.com/HugoJBello/plsql-code-generator/blob/master/captures/example_object1.png)
+
+Now click on the button *dbms_output from a type* and click **Generate**. If you go to the tab *Generated dbms_output* you will see that it has generated the code
 ```
  dbms_output.put_line('type_name1 ' || result.type_name1 );
  dbms_output.put_line('type_name1 ' || result.type_name1 );
