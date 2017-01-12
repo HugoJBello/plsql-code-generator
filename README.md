@@ -15,9 +15,18 @@ Execute the file plsql-code-generator.jar and copy the code:
 
 (this declarates a very simple type)
 
-now click **Generate** and go to the tab *Generated dbms_output*
+now click on the button *dbms_output from a type* and click **Generate**. If you go to the tab *Generated dbms_output* you will see that it has generated the code
+```
+ dbms_output.put_line('type_name1 ' || result.type_name1 );
+ dbms_output.put_line('type_name1 ' || result.type_name1 );
+ dbms_output.put_line('type_name1 ' || result.type_name1 );
+ dbms_output.put_line('type_name1 ' || result.type_name1 );
+```
 
-  ``CREATE OR REPLACE TYPE object_name FORCE AS OBJECT
+We can repeat this operation with objects instead of types. In that case we can use a code as the following one:
+
+  ```
+  CREATE OR REPLACE TYPE object_name FORCE AS OBJECT
   (
       record1  VARCHAR2(15 BYTE),
       record2  NUMBER(5),
@@ -33,6 +42,17 @@ now click **Generate** and go to the tab *Generated dbms_output*
       record5  NUMBER,
       record6  NUMBER)  
   RETURN SELF AS RESULT
-  );``
+  );
+  ```
 
-click 
+clicking on *dbms_output from a type* and   **Generate** we will obtain the code:
+```
+ dbms_output.put_line('record1 ' || result.record1 );
+ dbms_output.put_line('record2 ' || result.record2 );
+ dbms_output.put_line('record3 ' || result.record3 );
+ dbms_output.put_line('record4 ' || result.record4 );
+ dbms_output.put_line('record5 ' || result.record5 );
+ dbms_output.put_line('record6 ' || result.record6 );
+```
+
+
