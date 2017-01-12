@@ -5,7 +5,7 @@ For the moment, I am focusing on generating dbms_outputs from objects or types i
 
 ## Usage and instalation
 
-Just download the file plsql-code-generator.jar and execute it using java (normally it suffices with double clicking it).
+Just download the file [plsql-code-generator.jar](https://github.com/HugoJBello/plsql-code-generator/blob/master/pl_dbms_output.jar) and execute it using java (normally it is sufficient with double clicking it).
 
 ## Example
 
