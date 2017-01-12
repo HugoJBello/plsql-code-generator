@@ -1,0 +1,14 @@
+FUNCTION em_k_ld_inf_adicional_trn.f_tab_p_his_1(p_cod_idioma    IN trn_general.t_cod_idioma               ,
+                        p_mca_lk        IN trn_general.t_mca                      ,
+                        p_cod_cia       IN trn_inf_adicional_agr_k.t_cod_cia      ,
+                        p_num_poliza    IN trn_inf_adicional_agr_k.t_num_poliza   ,
+                        p_num_spto      IN trn_inf_adicional_agr_k.t_num_spto     ,
+                        p_num_apli      IN trn_inf_adicional_agr_k.t_num_apli     ,
+                        p_num_spto_apli IN trn_inf_adicional_agr_k.t_num_spto_apli,
+                        p_num_riesgo    IN trn_inf_adicional_agr_k.t_num_riesgo   ,
+                        p_num_periodo   IN trn_inf_adicional_agr_k.t_num_periodo  ,
+                        p_cod_cob       IN trn_inf_adicional_agr_k.t_cod_cob      ,
+                        p_cod_agr       IN trn_inf_adicional_agr_k.t_cod_agr      ,
+                        p_cod_ramo      IN trn_inf_adicional_agr_k.t_cod_ramo     ,
+                        p_fec_validez   IN trn_inf_adicional_agr_k.t_fec_validez  )
+    RETURN trn_inf_adicional_agr.t_t_inf_adicional_agr
