@@ -10,7 +10,7 @@ public class ObjectToDbmsOutput {
 	public String convert(String input){
 		String str;
 		String output= "";
-		//reemplazamos
+		//here we replace
 		str = input.split("CONSTRUCTOR FUNCTION")[0];
 		str= str.replaceAll("(?m)CREATE OR REPLACE.+","");
 		str= str.replaceAll("\n", " ").replaceAll("\\(", "").replaceAll("\\)", "").replaceAll(";","");
